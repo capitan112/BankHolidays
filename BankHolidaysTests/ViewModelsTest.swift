@@ -9,21 +9,35 @@ import XCTest
 @testable import BankHolidays
 
 class ViewModelsTest: XCTestCase {
-
+    var englandAndWalesViewModel: EnglandAndWalesViewModel!
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        let networkServiceLocal = NetworkServiceLocal(json: bankHolidayaJson)
+        let localDataFetcher = NetworkDataFetcher(networkingService: networkServiceLocal)
+        englandAndWalesViewModel = EnglandAndWalesViewModel(dataFetcher: localDataFetcher)
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        englandAndWalesViewModel = nil
     }
 
-    func testExample() throws {
-        let englandAndWalesViewModel = EnglandAndWalesViewModel()
-        let expectations = expectation(description:"fetch England and Wales holidays")
+    func testFetchEnglandAndWalesViewModel() throws {
         englandAndWalesViewModel.fetchHolidays()
+        guard let englandAndWalesEvens: [Event] = englandAndWalesViewModel.bankHolidays.value else {
+            XCTFail()
+            return
+        }
         
+        XCTAssertEqual(englandAndWalesEvens.count, 57)
         
-        
+        let date = "2016-01-01"
+        let formater = DateFormatter.yearMonthFormatter
+            
+        let expectedEvent = Event(title: "New Year’s Day", date: formater.date(from: date) ?? Date(), notes: Notes.empty, bunting: true)
+        if let newYear: Event = englandAndWalesEvens.first {
+            XCTAssertEqual(newYear , expectedEvent)
+        } else {
+            XCTFail()
+        }
     }
 }

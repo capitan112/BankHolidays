@@ -8,10 +8,16 @@
 import UIKit
 
 class EnglandAndWalesController: UIViewController, Storyboarded {
+
+    var viewModel: EnglandAndWalesViewModelType!
     
-        override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        self.viewModel.bankHolidays.bind { bankHolidays in
+            print(bankHolidays)
+            print()
+        }
     }
     
 

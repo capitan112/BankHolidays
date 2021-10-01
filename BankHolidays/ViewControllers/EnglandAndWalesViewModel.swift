@@ -8,29 +8,26 @@
 import Foundation
 
 protocol EnglandAndWalesViewModelType {
-    var holidays: Bindable<Details?> { get set }
+    var bankHolidays: Bindable<[Event]?> { get set }
     func fetchHolidays()
 }
 
 class EnglandAndWalesViewModel: EnglandAndWalesViewModelType {
     private(set) var dataFetcher: NetworkDataFetcherProtocol!
-
+    var bankHolidays: Bindable<[Event]?> = Bindable(nil)
+    
     init(dataFetcher: NetworkDataFetcherProtocol = NetworkDataFetcher()) {
         self.dataFetcher = dataFetcher
     }
     
-    var holidays: Bindable<Details?> = Bindable(nil)
-    
     func fetchHolidays() {
-        dataFetcher.fetchHolidays { [unowned self] response in
+        dataFetcher.fetchHolidays { response in
             switch response {
             case let .success(bankHolidays):
-                self.holidays.value = bankHolidays.englandAndWales
+                self.bankHolidays.value = bankHolidays.englandAndWales.events
             case let .failure(error):
                 debugPrint(error.localizedDescription)
             }
         }
     }
-    
-    
 }

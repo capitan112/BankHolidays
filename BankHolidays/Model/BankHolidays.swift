@@ -8,11 +8,10 @@
 import Foundation
 
 // MARK: - Welcome
-struct BankHolidays: Decodable {
+struct BankHolidays: Decodable, Equatable {
     let englandAndWales: Details
     let scotland: Details
     let northernIreland: Details
-    
     
     enum CodingKeys: String, CodingKey {
         case englandAndWales = "england-and-wales"
@@ -22,18 +21,19 @@ struct BankHolidays: Decodable {
 }
 
 
-struct Details: Decodable {
+struct Details: Decodable, Equatable {
     let events: [Event]
 }
 
 // MARK: - Event
-struct Event: Decodable {
-    let title, date: String
+struct Event: Decodable, Equatable {
+    let title: String
+    let date: Date
     let notes: Notes
     let bunting: Bool
 }
 
-enum Notes: String, Decodable {
+enum Notes: String, Decodable, Equatable {
     case empty = ""
     case substituteDay = "Substitute day"
 }

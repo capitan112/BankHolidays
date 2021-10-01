@@ -49,7 +49,7 @@ final class NetworkDataFetcher: NetworkDataFetcherProtocol {
         }
 
         let decoder = JSONDecoder()
-        decoder.dateDecodingStrategy = .formatted(DateFormatter.iso8601Full)
+        decoder.dateDecodingStrategy = .formatted(DateFormatter.yearMonthFormatter)
         do {
             completion(.success(try decoder.decode(T.self, from: data)))
         } catch {

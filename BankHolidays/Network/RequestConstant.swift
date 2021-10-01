@@ -14,5 +14,3 @@ struct RequestConstant {
         static let APIPath = "/bank-holidays.json"
     }
 }
-
-//https://www.gov.uk/bank-holidays.json

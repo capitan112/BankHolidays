@@ -181,12 +181,12 @@
 		C9E541B02706F67A00888E58 /* BankHolidays */ = {
 			isa = PBXGroup;
 			children = (
+				C9E541E12706F6FE00888E58 /* Network */,
 				C914C62F27074D7400B1E89F /* Helpers */,
 				C914C62E27074D1D00B1E89F /* Models */,
 				C914C62D27074D1000B1E89F /* ViewControllers */,
 				C914C62927074C5700B1E89F /* Coordinator */,
 				C9E541EB2706F84C00888E58 /* Extensions */,
-				C9E541E12706F6FE00888E58 /* Network */,
 				C9E541B12706F67A00888E58 /* AppDelegate.swift */,
 				C9E541B72706F67A00888E58 /* Main.storyboard */,
 				C9E541BA2706F67B00888E58 /* Assets.xcassets */,
