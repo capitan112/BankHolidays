@@ -1,0 +1,718 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C914C62B27074C6B00B1E89F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914C62A27074C6B00B1E89F /* Coordinator.swift */; };
+		C914C63127074D9800B1E89F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914C63027074D9800B1E89F /* AppCoordinator.swift */; };
+		C914C63327074DE400B1E89F /* EnglandAndWalesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914C63227074DE400B1E89F /* EnglandAndWalesCoordinator.swift */; };
+		C914C63527074E5F00B1E89F /* ScotlandCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914C63427074E5F00B1E89F /* ScotlandCoordinator.swift */; };
+		C914C63727074E9700B1E89F /* NorthernIrelandCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914C63627074E9700B1E89F /* NorthernIrelandCoordinator.swift */; };
+		C914C63927074F0F00B1E89F /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914C63827074F0F00B1E89F /* Storyboarded.swift */; };
+		C914C63B27074F2900B1E89F /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914C63A27074F2900B1E89F /* Bindable.swift */; };
+		C914C63F2707529E00B1E89F /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914C63E2707529E00B1E89F /* TabBarCoordinator.swift */; };
+		C9E541B22706F67A00888E58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E541B12706F67A00888E58 /* AppDelegate.swift */; };
+		C9E541B62706F67A00888E58 /* EnglandAndWalesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E541B52706F67A00888E58 /* EnglandAndWalesController.swift */; };
+		C9E541B92706F67A00888E58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9E541B72706F67A00888E58 /* Main.storyboard */; };
+		C9E541BB2706F67B00888E58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9E541BA2706F67B00888E58 /* Assets.xcassets */; };
+		C9E541BE2706F67B00888E58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9E541BC2706F67B00888E58 /* LaunchScreen.storyboard */; };
+		C9E541C92706F67C00888E58 /* BankHolidaysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E541C82706F67C00888E58 /* BankHolidaysTests.swift */; };
+		C9E541D42706F67C00888E58 /* BankHolidaysUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E541D32706F67C00888E58 /* BankHolidaysUITests.swift */; };
+		C9E541E32706F73000888E58 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E541E22706F73000888E58 /* NetworkDataFetcher.swift */; };
+		C9E541E52706F74600888E58 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E541E42706F74600888E58 /* NetworkService.swift */; };
+		C9E541E72706F76100888E58 /* RequestConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E541E62706F76100888E58 /* RequestConstant.swift */; };
+		C9E541EA2706F7DC00888E58 /* BankHolidays.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E541E92706F7DC00888E58 /* BankHolidays.swift */; };
+		C9E541ED2706F86800888E58 /* DateFormatter+Iso8601Full.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E541EC2706F86800888E58 /* DateFormatter+Iso8601Full.swift */; };
+		C9E541EF2706FF6D00888E58 /* JsonsStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E541EE2706FF6D00888E58 /* JsonsStub.swift */; };
+		C9E541F12706FFCF00888E58 /* NetworkServiceLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E541F02706FFCF00888E58 /* NetworkServiceLocal.swift */; };
+		C9EAE34C2707535100C58D88 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EAE34B2707535100C58D88 /* TabBarController.swift */; };
+		C9EAE34E27075A3300C58D88 /* ScotlandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EAE34D27075A3300C58D88 /* ScotlandViewController.swift */; };
+		C9EAE35027075A7E00C58D88 /* NorthernIrelandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EAE34F27075A7E00C58D88 /* NorthernIrelandViewController.swift */; };
+		C9EAE3522707636100C58D88 /* EnglandAndWalesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EAE3512707636100C58D88 /* EnglandAndWalesViewModel.swift */; };
+		C9EAE3542707647B00C58D88 /* ViewModelsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EAE3532707647B00C58D88 /* ViewModelsTest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9E541C52706F67C00888E58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9E541A62706F67A00888E58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9E541AD2706F67A00888E58;
+			remoteInfo = BankHolidays;
+		};
+		C9E541D02706F67C00888E58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9E541A62706F67A00888E58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9E541AD2706F67A00888E58;
+			remoteInfo = BankHolidays;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C914C62A27074C6B00B1E89F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Coordinator.swift; path = BankHolidays/Coordinators/Coordinator.swift; sourceTree = SOURCE_ROOT; };
+		C914C63027074D9800B1E89F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		C914C63227074DE400B1E89F /* EnglandAndWalesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglandAndWalesCoordinator.swift; sourceTree = "<group>"; };
+		C914C63427074E5F00B1E89F /* ScotlandCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScotlandCoordinator.swift; sourceTree = "<group>"; };
+		C914C63627074E9700B1E89F /* NorthernIrelandCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthernIrelandCoordinator.swift; sourceTree = "<group>"; };
+		C914C63827074F0F00B1E89F /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		C914C63A27074F2900B1E89F /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		C914C63E2707529E00B1E89F /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		C9E541AE2706F67A00888E58 /* BankHolidays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankHolidays.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9E541B12706F67A00888E58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C9E541B52706F67A00888E58 /* EnglandAndWalesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglandAndWalesController.swift; sourceTree = "<group>"; };
+		C9E541B82706F67A00888E58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C9E541BA2706F67B00888E58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C9E541BD2706F67B00888E58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C9E541BF2706F67B00888E58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9E541C42706F67C00888E58 /* BankHolidaysTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankHolidaysTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9E541C82706F67C00888E58 /* BankHolidaysTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankHolidaysTests.swift; sourceTree = "<group>"; };
+		C9E541CA2706F67C00888E58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9E541CF2706F67C00888E58 /* BankHolidaysUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankHolidaysUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9E541D32706F67C00888E58 /* BankHolidaysUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankHolidaysUITests.swift; sourceTree = "<group>"; };
+		C9E541D52706F67C00888E58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9E541E22706F73000888E58 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
+		C9E541E42706F74600888E58 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		C9E541E62706F76100888E58 /* RequestConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestConstant.swift; sourceTree = "<group>"; };
+		C9E541E92706F7DC00888E58 /* BankHolidays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankHolidays.swift; sourceTree = "<group>"; };
+		C9E541EC2706F86800888E58 /* DateFormatter+Iso8601Full.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Iso8601Full.swift"; sourceTree = "<group>"; };
+		C9E541EE2706FF6D00888E58 /* JsonsStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonsStub.swift; sourceTree = "<group>"; };
+		C9E541F02706FFCF00888E58 /* NetworkServiceLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceLocal.swift; sourceTree = "<group>"; };
+		C9EAE34B2707535100C58D88 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		C9EAE34D27075A3300C58D88 /* ScotlandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScotlandViewController.swift; sourceTree = "<group>"; };
+		C9EAE34F27075A7E00C58D88 /* NorthernIrelandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthernIrelandViewController.swift; sourceTree = "<group>"; };
+		C9EAE3512707636100C58D88 /* EnglandAndWalesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglandAndWalesViewModel.swift; sourceTree = "<group>"; };
+		C9EAE3532707647B00C58D88 /* ViewModelsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelsTest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9E541AB2706F67A00888E58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9E541C12706F67C00888E58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9E541CC2706F67C00888E58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C914C62927074C5700B1E89F /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				C914C62A27074C6B00B1E89F /* Coordinator.swift */,
+				C914C63027074D9800B1E89F /* AppCoordinator.swift */,
+				C914C63E2707529E00B1E89F /* TabBarCoordinator.swift */,
+				C914C63227074DE400B1E89F /* EnglandAndWalesCoordinator.swift */,
+				C914C63427074E5F00B1E89F /* ScotlandCoordinator.swift */,
+				C914C63627074E9700B1E89F /* NorthernIrelandCoordinator.swift */,
+			);
+			name = Coordinator;
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		C914C62D27074D1000B1E89F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9EAE34B2707535100C58D88 /* TabBarController.swift */,
+				C9E541B52706F67A00888E58 /* EnglandAndWalesController.swift */,
+				C9EAE3512707636100C58D88 /* EnglandAndWalesViewModel.swift */,
+				C9EAE34D27075A3300C58D88 /* ScotlandViewController.swift */,
+				C9EAE34F27075A7E00C58D88 /* NorthernIrelandViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C914C62E27074D1D00B1E89F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C9E541E92706F7DC00888E58 /* BankHolidays.swift */,
+			);
+			name = Models;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C914C62F27074D7400B1E89F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C914C63827074F0F00B1E89F /* Storyboarded.swift */,
+				C914C63A27074F2900B1E89F /* Bindable.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C9E541A52706F67A00888E58 = {
+			isa = PBXGroup;
+			children = (
+				C9E541B02706F67A00888E58 /* BankHolidays */,
+				C9E541C72706F67C00888E58 /* BankHolidaysTests */,
+				C9E541D22706F67C00888E58 /* BankHolidaysUITests */,
+				C9E541AF2706F67A00888E58 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9E541AF2706F67A00888E58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9E541AE2706F67A00888E58 /* BankHolidays.app */,
+				C9E541C42706F67C00888E58 /* BankHolidaysTests.xctest */,
+				C9E541CF2706F67C00888E58 /* BankHolidaysUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9E541B02706F67A00888E58 /* BankHolidays */ = {
+			isa = PBXGroup;
+			children = (
+				C914C62F27074D7400B1E89F /* Helpers */,
+				C914C62E27074D1D00B1E89F /* Models */,
+				C914C62D27074D1000B1E89F /* ViewControllers */,
+				C914C62927074C5700B1E89F /* Coordinator */,
+				C9E541EB2706F84C00888E58 /* Extensions */,
+				C9E541E12706F6FE00888E58 /* Network */,
+				C9E541B12706F67A00888E58 /* AppDelegate.swift */,
+				C9E541B72706F67A00888E58 /* Main.storyboard */,
+				C9E541BA2706F67B00888E58 /* Assets.xcassets */,
+				C9E541BC2706F67B00888E58 /* LaunchScreen.storyboard */,
+				C9E541BF2706F67B00888E58 /* Info.plist */,
+			);
+			path = BankHolidays;
+			sourceTree = "<group>";
+		};
+		C9E541C72706F67C00888E58 /* BankHolidaysTests */ = {
+			isa = PBXGroup;
+			children = (
+				C9E541C82706F67C00888E58 /* BankHolidaysTests.swift */,
+				C9EAE3532707647B00C58D88 /* ViewModelsTest.swift */,
+				C9E541CA2706F67C00888E58 /* Info.plist */,
+				C9E541EE2706FF6D00888E58 /* JsonsStub.swift */,
+				C9E541F02706FFCF00888E58 /* NetworkServiceLocal.swift */,
+			);
+			path = BankHolidaysTests;
+			sourceTree = "<group>";
+		};
+		C9E541D22706F67C00888E58 /* BankHolidaysUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C9E541D32706F67C00888E58 /* BankHolidaysUITests.swift */,
+				C9E541D52706F67C00888E58 /* Info.plist */,
+			);
+			path = BankHolidaysUITests;
+			sourceTree = "<group>";
+		};
+		C9E541E12706F6FE00888E58 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C9E541E22706F73000888E58 /* NetworkDataFetcher.swift */,
+				C9E541E42706F74600888E58 /* NetworkService.swift */,
+				C9E541E62706F76100888E58 /* RequestConstant.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C9E541EB2706F84C00888E58 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C9E541EC2706F86800888E58 /* DateFormatter+Iso8601Full.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9E541AD2706F67A00888E58 /* BankHolidays */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9E541D82706F67C00888E58 /* Build configuration list for PBXNativeTarget "BankHolidays" */;
+			buildPhases = (
+				C9E541AA2706F67A00888E58 /* Sources */,
+				C9E541AB2706F67A00888E58 /* Frameworks */,
+				C9E541AC2706F67A00888E58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BankHolidays;
+			productName = BankHolidays;
+			productReference = C9E541AE2706F67A00888E58 /* BankHolidays.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C9E541C32706F67C00888E58 /* BankHolidaysTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9E541DB2706F67C00888E58 /* Build configuration list for PBXNativeTarget "BankHolidaysTests" */;
+			buildPhases = (
+				C9E541C02706F67C00888E58 /* Sources */,
+				C9E541C12706F67C00888E58 /* Frameworks */,
+				C9E541C22706F67C00888E58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9E541C62706F67C00888E58 /* PBXTargetDependency */,
+			);
+			name = BankHolidaysTests;
+			productName = BankHolidaysTests;
+			productReference = C9E541C42706F67C00888E58 /* BankHolidaysTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C9E541CE2706F67C00888E58 /* BankHolidaysUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9E541DE2706F67C00888E58 /* Build configuration list for PBXNativeTarget "BankHolidaysUITests" */;
+			buildPhases = (
+				C9E541CB2706F67C00888E58 /* Sources */,
+				C9E541CC2706F67C00888E58 /* Frameworks */,
+				C9E541CD2706F67C00888E58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9E541D12706F67C00888E58 /* PBXTargetDependency */,
+			);
+			name = BankHolidaysUITests;
+			productName = BankHolidaysUITests;
+			productReference = C9E541CF2706F67C00888E58 /* BankHolidaysUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9E541A62706F67A00888E58 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					C9E541AD2706F67A00888E58 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					C9E541C32706F67C00888E58 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = C9E541AD2706F67A00888E58;
+					};
+					C9E541CE2706F67C00888E58 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = C9E541AD2706F67A00888E58;
+					};
+				};
+			};
+			buildConfigurationList = C9E541A92706F67A00888E58 /* Build configuration list for PBXProject "BankHolidays" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C9E541A52706F67A00888E58;
+			productRefGroup = C9E541AF2706F67A00888E58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9E541AD2706F67A00888E58 /* BankHolidays */,
+				C9E541C32706F67C00888E58 /* BankHolidaysTests */,
+				C9E541CE2706F67C00888E58 /* BankHolidaysUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9E541AC2706F67A00888E58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9E541BE2706F67B00888E58 /* LaunchScreen.storyboard in Resources */,
+				C9E541BB2706F67B00888E58 /* Assets.xcassets in Resources */,
+				C9E541B92706F67A00888E58 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9E541C22706F67C00888E58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9E541CD2706F67C00888E58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9E541AA2706F67A00888E58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C914C63527074E5F00B1E89F /* ScotlandCoordinator.swift in Sources */,
+				C9EAE34C2707535100C58D88 /* TabBarController.swift in Sources */,
+				C9E541E52706F74600888E58 /* NetworkService.swift in Sources */,
+				C9E541E32706F73000888E58 /* NetworkDataFetcher.swift in Sources */,
+				C9E541B62706F67A00888E58 /* EnglandAndWalesController.swift in Sources */,
+				C9E541B22706F67A00888E58 /* AppDelegate.swift in Sources */,
+				C9EAE35027075A7E00C58D88 /* NorthernIrelandViewController.swift in Sources */,
+				C9EAE3522707636100C58D88 /* EnglandAndWalesViewModel.swift in Sources */,
+				C914C63B27074F2900B1E89F /* Bindable.swift in Sources */,
+				C9E541ED2706F86800888E58 /* DateFormatter+Iso8601Full.swift in Sources */,
+				C914C63327074DE400B1E89F /* EnglandAndWalesCoordinator.swift in Sources */,
+				C914C63F2707529E00B1E89F /* TabBarCoordinator.swift in Sources */,
+				C914C63727074E9700B1E89F /* NorthernIrelandCoordinator.swift in Sources */,
+				C9EAE34E27075A3300C58D88 /* ScotlandViewController.swift in Sources */,
+				C914C63127074D9800B1E89F /* AppCoordinator.swift in Sources */,
+				C9E541E72706F76100888E58 /* RequestConstant.swift in Sources */,
+				C9E541EA2706F7DC00888E58 /* BankHolidays.swift in Sources */,
+				C914C62B27074C6B00B1E89F /* Coordinator.swift in Sources */,
+				C914C63927074F0F00B1E89F /* Storyboarded.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9E541C02706F67C00888E58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9E541F12706FFCF00888E58 /* NetworkServiceLocal.swift in Sources */,
+				C9E541C92706F67C00888E58 /* BankHolidaysTests.swift in Sources */,
+				C9EAE3542707647B00C58D88 /* ViewModelsTest.swift in Sources */,
+				C9E541EF2706FF6D00888E58 /* JsonsStub.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9E541CB2706F67C00888E58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9E541D42706F67C00888E58 /* BankHolidaysUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9E541C62706F67C00888E58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9E541AD2706F67A00888E58 /* BankHolidays */;
+			targetProxy = C9E541C52706F67C00888E58 /* PBXContainerItemProxy */;
+		};
+		C9E541D12706F67C00888E58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9E541AD2706F67A00888E58 /* BankHolidays */;
+			targetProxy = C9E541D02706F67C00888E58 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C9E541B72706F67A00888E58 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9E541B82706F67A00888E58 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C9E541BC2706F67B00888E58 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9E541BD2706F67B00888E58 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9E541D62706F67C00888E58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C9E541D72706F67C00888E58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9E541D92706F67C00888E58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BankHolidays/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.capitan.BankHolidays;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C9E541DA2706F67C00888E58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BankHolidays/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.capitan.BankHolidays;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C9E541DC2706F67C00888E58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BankHolidaysTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.capitan.BankHolidaysTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BankHolidays.app/BankHolidays";
+			};
+			name = Debug;
+		};
+		C9E541DD2706F67C00888E58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BankHolidaysTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.capitan.BankHolidaysTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BankHolidays.app/BankHolidays";
+			};
+			name = Release;
+		};
+		C9E541DF2706F67C00888E58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BankHolidaysUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.capitan.BankHolidaysUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BankHolidays;
+			};
+			name = Debug;
+		};
+		C9E541E02706F67C00888E58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BankHolidaysUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.capitan.BankHolidaysUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BankHolidays;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9E541A92706F67A00888E58 /* Build configuration list for PBXProject "BankHolidays" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9E541D62706F67C00888E58 /* Debug */,
+				C9E541D72706F67C00888E58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9E541D82706F67C00888E58 /* Build configuration list for PBXNativeTarget "BankHolidays" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9E541D92706F67C00888E58 /* Debug */,
+				C9E541DA2706F67C00888E58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9E541DB2706F67C00888E58 /* Build configuration list for PBXNativeTarget "BankHolidaysTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9E541DC2706F67C00888E58 /* Debug */,
+				C9E541DD2706F67C00888E58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9E541DE2706F67C00888E58 /* Build configuration list for PBXNativeTarget "BankHolidaysUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9E541DF2706F67C00888E58 /* Debug */,
+				C9E541E02706F67C00888E58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9E541A62706F67A00888E58 /* Project object */;
+}
