@@ -31,8 +31,8 @@ final class NetworkDataFetcher: NetworkDataFetcherProtocol {
         fetchGenericJSONData(path: RequestConstant.Server.APIPath, response: completion)
     }
 
-    func fetchGenericJSONData<T: Decodable>(path: String, response: @escaping (Result<T, Error>) -> Void) {
-        networkingService.request() { dataResponse in
+    func fetchGenericJSONData<T: Decodable>(path _: String, response: @escaping (Result<T, Error>) -> Void) {
+        networkingService.request { dataResponse in
             guard let data = try? dataResponse.get() else {
                 response(.failure(ConversionFailure.responceError))
                 return

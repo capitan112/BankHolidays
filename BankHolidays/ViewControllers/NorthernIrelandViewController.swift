@@ -13,12 +13,12 @@ class NorthernIrelandViewController: UIViewController, Storyboarded {
         super.viewDidLoad()
         setupUI()
     }
-    
+
     private func setupUI() {
         if #available(iOS 13.0, *) {
             overrideUserInterfaceStyle = .light
         }
         view.backgroundColor = .green
-        self.title = "Northern Ireland"
+        title = "Northern Ireland"
     }
 }

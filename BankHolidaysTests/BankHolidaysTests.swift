@@ -5,13 +5,13 @@
 //  Created by Oleksiy Chebotarov on 01/10/2021.
 //
 
-import XCTest
 @testable import BankHolidays
+import XCTest
 
 class BankHolidaysTests: XCTestCase {
     var networkServiceLocal: NetworkServiceLocal!
     var localDataFetcher: NetworkDataFetcher!
-    
+
     override func setUpWithError() throws {
         networkServiceLocal = NetworkServiceLocal(json: bankHolidayaJson)
         localDataFetcher = NetworkDataFetcher(networkingService: networkServiceLocal)
@@ -26,7 +26,6 @@ class BankHolidaysTests: XCTestCase {
         localDataFetcher.fetchHolidays(completion: { response in
             switch response {
             case let .success(bankHolidays):
-                print(bankHolidays)
                 XCTAssertEqual(bankHolidays.englandAndWales.events.count, 57)
             case let .failure(error):
                 debugPrint(error.localizedDescription)
@@ -34,12 +33,11 @@ class BankHolidaysTests: XCTestCase {
             }
         })
     }
-    
+
     func testScotlandEvens() throws {
         localDataFetcher.fetchHolidays(completion: { response in
             switch response {
             case let .success(bankHolidays):
-                print(bankHolidays)
                 XCTAssertEqual(bankHolidays.scotland.events.count, 64)
             case let .failure(error):
                 debugPrint(error.localizedDescription)
@@ -47,12 +45,11 @@ class BankHolidaysTests: XCTestCase {
             }
         })
     }
-    
+
     func testNIrealcnEvens() throws {
         localDataFetcher.fetchHolidays(completion: { response in
             switch response {
             case let .success(bankHolidays):
-                print(bankHolidays)
                 XCTAssertEqual(bankHolidays.northernIreland.events.count, 71)
             case let .failure(error):
                 debugPrint(error.localizedDescription)

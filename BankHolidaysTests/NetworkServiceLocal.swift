@@ -5,11 +5,10 @@
 //  Created by Oleksiy Chebotarov on 01/10/2021.
 //
 
-import Foundation
 @testable import BankHolidays
+import Foundation
 
 class NetworkServiceLocal: NetworkProtocol {
-    
     private var dataSourceJson: String
 
     init(json: String) {
@@ -20,4 +19,3 @@ class NetworkServiceLocal: NetworkProtocol {
         completion(.success(dataSourceJson.data(using: .utf8)!))
     }
 }
-

@@ -9,7 +9,6 @@ import Foundation
 import UIKit
 
 class TabBarCoordinator: Coordinator {
-    
     let navigationController: UINavigationController
 
     init(navigationController: UINavigationController) {
@@ -23,8 +22,7 @@ class TabBarCoordinator: Coordinator {
         let englandAndWaleNavigationController = UINavigationController()
         englandAndWaleNavigationController.tabBarItem = UITabBarItem(tabBarSystemItem: .topRated, tag: 0)
         let englandAndWalesCoordinator = EnglandAndWalesCoordinator(navigationController: englandAndWaleNavigationController)
-        
-        
+
         let scotlandNavigationController = UINavigationController()
         scotlandNavigationController.tabBarItem = UITabBarItem(
             tabBarSystemItem: .search, tag: 1
@@ -39,8 +37,7 @@ class TabBarCoordinator: Coordinator {
 
         tabBarController.viewControllers = [englandAndWaleNavigationController,
                                             scotlandNavigationController,
-                                            northernIrelandNavigationController
-                                            ]
+                                            northernIrelandNavigationController]
         navigationController.pushViewController(tabBarController, animated: false)
         coordinate(to: englandAndWalesCoordinator)
         coordinate(to: scotlandCoordinator)

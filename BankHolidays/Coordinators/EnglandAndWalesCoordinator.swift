@@ -8,7 +8,6 @@
 import Foundation
 import UIKit
 
-
 final class EnglandAndWalesCoordinator: Coordinator {
     let navigationController: UINavigationController
 
@@ -19,8 +18,8 @@ final class EnglandAndWalesCoordinator: Coordinator {
     func start() {
         let englandAndWalesController = EnglandAndWalesController.instantiate(storyboardName: "Main")
         let englandAndWalesViewModel = EnglandAndWalesViewModel()
-        englandAndWalesViewModel.fetchHolidays()    
         englandAndWalesController.viewModel = englandAndWalesViewModel
+        englandAndWalesViewModel.fetchHolidays()
         navigationController.pushViewController(englandAndWalesController, animated: false)
     }
 }

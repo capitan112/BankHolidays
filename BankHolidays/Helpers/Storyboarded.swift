@@ -19,4 +19,3 @@ extension Storyboarded where Self: UIViewController {
         return storyboard.instantiateViewController(identifier: id) as! Self
     }
 }
-

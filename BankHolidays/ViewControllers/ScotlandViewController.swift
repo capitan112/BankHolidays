@@ -13,12 +13,12 @@ class ScotlandViewController: UIViewController, Storyboarded {
         super.viewDidLoad()
         setupUI()
     }
-    
+
     private func setupUI() {
         if #available(iOS 13.0, *) {
             overrideUserInterfaceStyle = .light
         }
         view.backgroundColor = .blue
-        self.title = "Scotland"
+        title = "Scotland"
     }
 }

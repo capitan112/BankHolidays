@@ -13,23 +13,23 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         tabBar.layer.masksToBounds = true
         tabBar.barStyle = .black
         tabBar.barTintColor = .white
-        tabBar.tintColor = UIColor.orange
+        tabBar.tintColor = UIColor.blue
 
         tabBar.layer.shadowColor = UIColor.lightGray.cgColor
         tabBar.layer.shadowOffset = CGSize(width: 0.0, height: 4.0)
         tabBar.layer.shadowRadius = 10
         tabBar.layer.shadowOpacity = 1
         tabBar.layer.masksToBounds = false
-        self.delegate = self
+        delegate = self
     }
 
     var coordinator: TabBarCoordinator?
-    
-    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-        print("Selected item")
+
+    override func tabBar(_: UITabBar, didSelect _: UITabBarItem) {
+//        print("Selected item")
     }
 
-    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-        print("Selected view controller")
+    func tabBarController(_: UITabBarController, didSelect _: UIViewController) {
+//        print("Selected view controller")
     }
 }

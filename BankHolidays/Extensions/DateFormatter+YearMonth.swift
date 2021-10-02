@@ -10,10 +10,9 @@ import Foundation
 extension DateFormatter {
     static let yearMonthFormatter: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.locale = Locale(identifier: "en_US_POSIX")
-        formatter.dateFormat = "yyyy-mm-dd"
+        formatter.locale = Locale(identifier: "en_UK_POSIX")
+        formatter.dateFormat = "yyyy-MM-dd"
 
         return formatter
     }()
 }
-
