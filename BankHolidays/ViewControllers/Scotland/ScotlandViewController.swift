@@ -1,15 +1,15 @@
 //
-//  ViewController.swift
+//  ScotlandViewController.swift
 //  BankHolidays
 //
 //  Created by Oleksiy Chebotarov on 01/10/2021.
 //
 
+import Foundation
 import UIKit
 
-class EnglandAndWalesController: RootViewController, Storyboarded {
-    let navTitle = "England and Wales"
-
+class ScotlandViewController: RootViewController, Storyboarded {
+    let navTitle = "Scotland"
     @IBOutlet var tableView: UITableView!
 
     override func viewDidLoad() {

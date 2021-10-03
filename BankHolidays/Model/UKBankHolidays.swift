@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - Welcome
 
-struct BankHolidays: Decodable, Equatable {
+struct UKBankHolidays: Decodable, Equatable {
     let englandAndWales: Details
     let scotland: Details
     let northernIreland: Details

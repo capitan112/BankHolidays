@@ -17,7 +17,7 @@ enum ConversionFailure: Error {
 }
 
 protocol NetworkDataFetcherProtocol {
-    func fetchHolidays(completion: @escaping (Result<BankHolidays, Error>) -> Void)
+    func fetchHolidays(completion: @escaping (Result<UKBankHolidays, Error>) -> Void)
 }
 
 final class NetworkDataFetcher: NetworkDataFetcherProtocol {
@@ -27,7 +27,7 @@ final class NetworkDataFetcher: NetworkDataFetcherProtocol {
         self.networkingService = networkingService
     }
 
-    func fetchHolidays(completion: @escaping (Result<BankHolidays, Error>) -> Void) {
+    func fetchHolidays(completion: @escaping (Result<UKBankHolidays, Error>) -> Void) {
         fetchGenericJSONData(path: RequestConstant.Server.APIPath, response: completion)
     }
 

@@ -17,8 +17,8 @@ final class NorthernIrelandCoordinator: Coordinator {
 
     func start() {
         let northernIrelandViewController = NorthernIrelandViewController.instantiate(storyboardName: "Main")
-//        let detailsViewModel = DetailsViewModel(character: character)
-//        detailsViewController.viewModel = detailsViewModel
+        let northernIrelandViewModel = NorthernIrelandViewModel()
+        northernIrelandViewController.viewModel = northernIrelandViewModel
         navigationController.pushViewController(northernIrelandViewController, animated: false)
     }
 }

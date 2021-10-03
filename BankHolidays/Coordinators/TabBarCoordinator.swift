@@ -5,6 +5,7 @@
 //  Created by Oleksiy Chebotarov on 01/10/2021.
 //
 
+import FlagKit
 import Foundation
 import UIKit
 
@@ -20,19 +21,22 @@ class TabBarCoordinator: Coordinator {
         tabBarController.coordinator = self
 
         let englandAndWaleNavigationController = UINavigationController()
-        englandAndWaleNavigationController.tabBarItem = UITabBarItem(tabBarSystemItem: .topRated, tag: 0)
+
+        englandAndWaleNavigationController.tabBarItem = UITabBarItem(title: "England and Wales",
+                                                                     image: getFlag(name: "GB-ENG"), tag: 0)
+
         let englandAndWalesCoordinator = EnglandAndWalesCoordinator(navigationController: englandAndWaleNavigationController)
 
         let scotlandNavigationController = UINavigationController()
-        scotlandNavigationController.tabBarItem = UITabBarItem(
-            tabBarSystemItem: .search, tag: 1
-        )
+        scotlandNavigationController.tabBarItem = UITabBarItem(title: "Scotland",
+                                                               image: getFlag(name: "GB-SCT"),
+                                                               tag: 1)
         let scotlandCoordinator = ScotlandCoordinator(navigationController: scotlandNavigationController)
 
         let northernIrelandNavigationController = UINavigationController()
-        northernIrelandNavigationController.tabBarItem = UITabBarItem(
-            tabBarSystemItem: .history, tag: 2
-        )
+        northernIrelandNavigationController.tabBarItem = UITabBarItem(title: "Northern Ireland",
+                                                                      image: getFlag(name: "GB-NIR"),
+                                                                      tag: 2)
         let northernIrelandCoordinator = NorthernIrelandCoordinator(navigationController: northernIrelandNavigationController)
 
         tabBarController.viewControllers = [englandAndWaleNavigationController,
@@ -42,5 +46,9 @@ class TabBarCoordinator: Coordinator {
         coordinate(to: englandAndWalesCoordinator)
         coordinate(to: scotlandCoordinator)
         coordinate(to: northernIrelandCoordinator)
+    }
+
+    private func getFlag(name: String) -> UIImage? {
+        return Flag(countryCode: name)?.originalImage.withRenderingMode(.alwaysOriginal)
     }
 }

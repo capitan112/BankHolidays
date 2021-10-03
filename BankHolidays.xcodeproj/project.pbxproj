@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,13 @@
 		C914C63927074F0F00B1E89F /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914C63827074F0F00B1E89F /* Storyboarded.swift */; };
 		C914C63B27074F2900B1E89F /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914C63A27074F2900B1E89F /* Bindable.swift */; };
 		C914C63F2707529E00B1E89F /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914C63E2707529E00B1E89F /* TabBarCoordinator.swift */; };
+		C96C5D4B2708E45500895C26 /* FlagKit in Frameworks */ = {isa = PBXBuildFile; productRef = C96C5D4A2708E45500895C26 /* FlagKit */; };
+		C96C5D4E2708EE3C00895C26 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C96C5D4D2708EE3C00895C26 /* EventTableViewCell.xib */; };
+		C96C5D502708F1F900895C26 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96C5D4F2708F1F900895C26 /* RootViewController.swift */; };
+		C96C5D532708F86600895C26 /* ScotlandViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96C5D522708F86600895C26 /* ScotlandViewModel.swift */; };
+		C9D199822709A873009F703D /* NorthernIrelandViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D199812709A873009F703D /* NorthernIrelandViewModel.swift */; };
+		C9D199842709AA82009F703D /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D199832709AA82009F703D /* RootViewModel.swift */; };
+		C9D199862709C3E5009F703D /* CellEventViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D199852709C3E5009F703D /* CellEventViewModelTests.swift */; };
 		C9E541B22706F67A00888E58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E541B12706F67A00888E58 /* AppDelegate.swift */; };
 		C9E541B62706F67A00888E58 /* EnglandAndWalesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E541B52706F67A00888E58 /* EnglandAndWalesController.swift */; };
 		C9E541B92706F67A00888E58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9E541B72706F67A00888E58 /* Main.storyboard */; };
@@ -27,7 +34,7 @@
 		C9E541E32706F73000888E58 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E541E22706F73000888E58 /* NetworkDataFetcher.swift */; };
 		C9E541E52706F74600888E58 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E541E42706F74600888E58 /* NetworkService.swift */; };
 		C9E541E72706F76100888E58 /* RequestConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E541E62706F76100888E58 /* RequestConstant.swift */; };
-		C9E541EA2706F7DC00888E58 /* BankHolidays.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E541E92706F7DC00888E58 /* BankHolidays.swift */; };
+		C9E541EA2706F7DC00888E58 /* UKBankHolidays.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E541E92706F7DC00888E58 /* UKBankHolidays.swift */; };
 		C9E541ED2706F86800888E58 /* DateFormatter+YearMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E541EC2706F86800888E58 /* DateFormatter+YearMonth.swift */; };
 		C9E541EF2706FF6D00888E58 /* JsonsStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E541EE2706FF6D00888E58 /* JsonsStub.swift */; };
 		C9E541F12706FFCF00888E58 /* NetworkServiceLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E541F02706FFCF00888E58 /* NetworkServiceLocal.swift */; };
@@ -66,6 +73,12 @@
 		C914C63827074F0F00B1E89F /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		C914C63A27074F2900B1E89F /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
 		C914C63E2707529E00B1E89F /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		C96C5D4D2708EE3C00895C26 /* EventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
+		C96C5D4F2708F1F900895C26 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		C96C5D522708F86600895C26 /* ScotlandViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScotlandViewModel.swift; sourceTree = "<group>"; };
+		C9D199812709A873009F703D /* NorthernIrelandViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthernIrelandViewModel.swift; sourceTree = "<group>"; };
+		C9D199832709AA82009F703D /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		C9D199852709C3E5009F703D /* CellEventViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellEventViewModelTests.swift; sourceTree = "<group>"; };
 		C9E541AE2706F67A00888E58 /* BankHolidays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankHolidays.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E541B12706F67A00888E58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9E541B52706F67A00888E58 /* EnglandAndWalesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglandAndWalesController.swift; sourceTree = "<group>"; };
@@ -82,7 +95,7 @@
 		C9E541E22706F73000888E58 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
 		C9E541E42706F74600888E58 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		C9E541E62706F76100888E58 /* RequestConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestConstant.swift; sourceTree = "<group>"; };
-		C9E541E92706F7DC00888E58 /* BankHolidays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankHolidays.swift; sourceTree = "<group>"; };
+		C9E541E92706F7DC00888E58 /* UKBankHolidays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UKBankHolidays.swift; sourceTree = "<group>"; };
 		C9E541EC2706F86800888E58 /* DateFormatter+YearMonth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+YearMonth.swift"; sourceTree = "<group>"; };
 		C9E541EE2706FF6D00888E58 /* JsonsStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonsStub.swift; sourceTree = "<group>"; };
 		C9E541F02706FFCF00888E58 /* NetworkServiceLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceLocal.swift; sourceTree = "<group>"; };
@@ -98,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C96C5D4B2708E45500895C26 /* FlagKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,10 +150,12 @@
 			isa = PBXGroup;
 			children = (
 				C9EAE34B2707535100C58D88 /* TabBarController.swift */,
+				C9D199832709AA82009F703D /* RootViewModel.swift */,
+				C96C5D4F2708F1F900895C26 /* RootViewController.swift */,
 				C96C5D48270879A400895C26 /* EnglandAndWales */,
-				C9EAE34D27075A3300C58D88 /* ScotlandViewController.swift */,
-				C9EAE34F27075A7E00C58D88 /* NorthernIrelandViewController.swift */,
-				C90687CB2707A63300310859 /* EventTableViewCell.swift */,
+				C96C5D512708F85000895C26 /* Scotland */,
+				C9D199802709A868009F703D /* NorthernIreland */,
+				C96C5D4C2708EE2400895C26 /* Cell */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -147,7 +163,7 @@
 		C914C62E27074D1D00B1E89F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C9E541E92706F7DC00888E58 /* BankHolidays.swift */,
+				C9E541E92706F7DC00888E58 /* UKBankHolidays.swift */,
 			);
 			name = Models;
 			path = Model;
@@ -170,6 +186,33 @@
 				C9EAE3512707636100C58D88 /* EnglandAndWalesViewModel.swift */,
 			);
 			path = EnglandAndWales;
+			sourceTree = "<group>";
+		};
+		C96C5D4C2708EE2400895C26 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C90687CB2707A63300310859 /* EventTableViewCell.swift */,
+				C96C5D4D2708EE3C00895C26 /* EventTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C96C5D512708F85000895C26 /* Scotland */ = {
+			isa = PBXGroup;
+			children = (
+				C9EAE34D27075A3300C58D88 /* ScotlandViewController.swift */,
+				C96C5D522708F86600895C26 /* ScotlandViewModel.swift */,
+			);
+			path = Scotland;
+			sourceTree = "<group>";
+		};
+		C9D199802709A868009F703D /* NorthernIreland */ = {
+			isa = PBXGroup;
+			children = (
+				C9EAE34F27075A7E00C58D88 /* NorthernIrelandViewController.swift */,
+				C9D199812709A873009F703D /* NorthernIrelandViewModel.swift */,
+			);
+			path = NorthernIreland;
 			sourceTree = "<group>";
 		};
 		C9E541A52706F67A00888E58 = {
@@ -198,8 +241,8 @@
 				C9E541E12706F6FE00888E58 /* Network */,
 				C914C62F27074D7400B1E89F /* Helpers */,
 				C914C62E27074D1D00B1E89F /* Models */,
-				C914C62D27074D1000B1E89F /* ViewControllers */,
 				C914C62927074C5700B1E89F /* Coordinator */,
+				C914C62D27074D1000B1E89F /* ViewControllers */,
 				C9E541EB2706F84C00888E58 /* Extensions */,
 				C9E541B12706F67A00888E58 /* AppDelegate.swift */,
 				C9E541B72706F67A00888E58 /* Main.storyboard */,
@@ -215,6 +258,7 @@
 			children = (
 				C9E541C82706F67C00888E58 /* BankHolidaysTests.swift */,
 				C9EAE3532707647B00C58D88 /* ViewModelsTest.swift */,
+				C9D199852709C3E5009F703D /* CellEventViewModelTests.swift */,
 				C9E541CA2706F67C00888E58 /* Info.plist */,
 				C9E541EE2706FF6D00888E58 /* JsonsStub.swift */,
 				C9E541F02706FFCF00888E58 /* NetworkServiceLocal.swift */,
@@ -265,6 +309,9 @@
 			dependencies = (
 			);
 			name = BankHolidays;
+			packageProductDependencies = (
+				C96C5D4A2708E45500895C26 /* FlagKit */,
+			);
 			productName = BankHolidays;
 			productReference = C9E541AE2706F67A00888E58 /* BankHolidays.app */;
 			productType = "com.apple.product-type.application";
@@ -311,6 +358,9 @@
 		C9E541A62706F67A00888E58 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					Scotalnd,
+				);
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
@@ -336,6 +386,9 @@
 				Base,
 			);
 			mainGroup = C9E541A52706F67A00888E58;
+			packageReferences = (
+				C96C5D492708E45500895C26 /* XCRemoteSwiftPackageReference "FlagKit" */,
+			);
 			productRefGroup = C9E541AF2706F67A00888E58 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -352,6 +405,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C96C5D4E2708EE3C00895C26 /* EventTableViewCell.xib in Resources */,
 				C9E541BE2706F67B00888E58 /* LaunchScreen.storyboard in Resources */,
 				C9E541BB2706F67B00888E58 /* Assets.xcassets in Resources */,
 				C9E541B92706F67A00888E58 /* Main.storyboard in Resources */,
@@ -391,13 +445,17 @@
 				C90687CC2707A63300310859 /* EventTableViewCell.swift in Sources */,
 				C914C63B27074F2900B1E89F /* Bindable.swift in Sources */,
 				C9E541ED2706F86800888E58 /* DateFormatter+YearMonth.swift in Sources */,
+				C9D199822709A873009F703D /* NorthernIrelandViewModel.swift in Sources */,
 				C914C63327074DE400B1E89F /* EnglandAndWalesCoordinator.swift in Sources */,
 				C914C63F2707529E00B1E89F /* TabBarCoordinator.swift in Sources */,
+				C96C5D502708F1F900895C26 /* RootViewController.swift in Sources */,
+				C96C5D532708F86600895C26 /* ScotlandViewModel.swift in Sources */,
 				C914C63727074E9700B1E89F /* NorthernIrelandCoordinator.swift in Sources */,
 				C9EAE34E27075A3300C58D88 /* ScotlandViewController.swift in Sources */,
 				C914C63127074D9800B1E89F /* AppCoordinator.swift in Sources */,
+				C9D199842709AA82009F703D /* RootViewModel.swift in Sources */,
 				C9E541E72706F76100888E58 /* RequestConstant.swift in Sources */,
-				C9E541EA2706F7DC00888E58 /* BankHolidays.swift in Sources */,
+				C9E541EA2706F7DC00888E58 /* UKBankHolidays.swift in Sources */,
 				C914C62B27074C6B00B1E89F /* Coordinator.swift in Sources */,
 				C914C63927074F0F00B1E89F /* Storyboarded.swift in Sources */,
 			);
@@ -409,6 +467,7 @@
 			files = (
 				C9E541F12706FFCF00888E58 /* NetworkServiceLocal.swift in Sources */,
 				C9E541C92706F67C00888E58 /* BankHolidaysTests.swift in Sources */,
+				C9D199862709C3E5009F703D /* CellEventViewModelTests.swift in Sources */,
 				C9EAE3542707647B00C58D88 /* ViewModelsTest.swift in Sources */,
 				C9E541EF2706FF6D00888E58 /* JsonsStub.swift in Sources */,
 			);
@@ -729,6 +788,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C96C5D492708E45500895C26 /* XCRemoteSwiftPackageReference "FlagKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/madebybowtie/FlagKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C96C5D4A2708E45500895C26 /* FlagKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C96C5D492708E45500895C26 /* XCRemoteSwiftPackageReference "FlagKit" */;
+			productName = FlagKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C9E541A62706F67A00888E58 /* Project object */;
 }

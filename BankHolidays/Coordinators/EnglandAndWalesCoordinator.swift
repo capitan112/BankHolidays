@@ -19,7 +19,6 @@ final class EnglandAndWalesCoordinator: Coordinator {
         let englandAndWalesController = EnglandAndWalesController.instantiate(storyboardName: "Main")
         let englandAndWalesViewModel = EnglandAndWalesViewModel()
         englandAndWalesController.viewModel = englandAndWalesViewModel
-        englandAndWalesViewModel.fetchHolidays()
         navigationController.pushViewController(englandAndWalesController, animated: false)
     }
 }

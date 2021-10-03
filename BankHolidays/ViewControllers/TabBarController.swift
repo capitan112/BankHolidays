@@ -25,11 +25,7 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
 
     var coordinator: TabBarCoordinator?
 
-    override func tabBar(_: UITabBar, didSelect _: UITabBarItem) {
-//        print("Selected item")
-    }
+    override func tabBar(_: UITabBar, didSelect _: UITabBarItem) {}
 
-    func tabBarController(_: UITabBarController, didSelect _: UIViewController) {
-//        print("Selected view controller")
-    }
+    func tabBarController(_: UITabBarController, didSelect _: UIViewController) {}
 }

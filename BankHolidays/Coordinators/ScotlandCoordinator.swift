@@ -17,8 +17,8 @@ final class ScotlandCoordinator: Coordinator {
 
     func start() {
         let scotlandViewController = ScotlandViewController.instantiate(storyboardName: "Main")
-//        let detailsViewModel = DetailsViewModel(character: character)
-//        detailsViewController.viewModel = detailsViewModel
+        let scotlandViewModel = ScotlandViewModel()
+        scotlandViewController.viewModel = scotlandViewModel
         navigationController.pushViewController(scotlandViewController, animated: false)
     }
 }

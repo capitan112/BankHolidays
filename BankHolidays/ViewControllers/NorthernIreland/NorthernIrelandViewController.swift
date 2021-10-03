@@ -1,14 +1,15 @@
 //
-//  ViewController.swift
+//  NorthernIrelandViewController.swift
 //  BankHolidays
 //
 //  Created by Oleksiy Chebotarov on 01/10/2021.
 //
 
+import Foundation
 import UIKit
 
-class EnglandAndWalesController: RootViewController, Storyboarded {
-    let navTitle = "England and Wales"
+class NorthernIrelandViewController: RootViewController, Storyboarded {
+    let navTitle = "Northern Ireland"
 
     @IBOutlet var tableView: UITableView!
 
