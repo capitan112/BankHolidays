@@ -20,26 +20,29 @@ class TabBarCoordinator: Coordinator {
         let tabBarController = TabBarController()
         tabBarController.coordinator = self
 
-        let englandAndWaleNavigationController = UINavigationController()
+        let englandAndWalesNavigationController = UINavigationController()
+        let englandAndWalesFlag = getFlag(name: "GB-ENG")
+        englandAndWalesNavigationController.tabBarItem = UITabBarItem(title: "England and Wales",
+                                                                     image: englandAndWalesFlag,
+                                                                     tag: 0)
 
-        englandAndWaleNavigationController.tabBarItem = UITabBarItem(title: "England and Wales",
-                                                                     image: getFlag(name: "GB-ENG"), tag: 0)
-
-        let englandAndWalesCoordinator = EnglandAndWalesCoordinator(navigationController: englandAndWaleNavigationController)
+        let englandAndWalesCoordinator = EnglandAndWalesCoordinator(navigationController: englandAndWalesNavigationController)
 
         let scotlandNavigationController = UINavigationController()
+        let scotlandFlag = getFlag(name: "GB-SCT")
         scotlandNavigationController.tabBarItem = UITabBarItem(title: "Scotland",
-                                                               image: getFlag(name: "GB-SCT"),
+                                                               image: scotlandFlag,
                                                                tag: 1)
         let scotlandCoordinator = ScotlandCoordinator(navigationController: scotlandNavigationController)
 
         let northernIrelandNavigationController = UINavigationController()
+        let northernIrelandFlag = getFlag(name: "GB-NIR")
         northernIrelandNavigationController.tabBarItem = UITabBarItem(title: "Northern Ireland",
-                                                                      image: getFlag(name: "GB-NIR"),
+                                                                      image: northernIrelandFlag,
                                                                       tag: 2)
         let northernIrelandCoordinator = NorthernIrelandCoordinator(navigationController: northernIrelandNavigationController)
 
-        tabBarController.viewControllers = [englandAndWaleNavigationController,
+        tabBarController.viewControllers = [englandAndWalesNavigationController,
                                             scotlandNavigationController,
                                             northernIrelandNavigationController]
         navigationController.pushViewController(tabBarController, animated: false)

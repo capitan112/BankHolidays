@@ -42,7 +42,7 @@ class EventTableViewCell: UITableViewCell {
         contentainerView.backgroundColor = viewModel.isGone ? .lightGray : .white
 
         if !viewModel.isGone, viewModel.isBunting {
-//            contentainerView.backgroundColor = UIColor(red: 1, green: 0.7882, blue: 0.7882, alpha: 1.0)
+//            some logic when is gone and isBunting
         }
     }
 }
