@@ -23,8 +23,8 @@ class TabBarCoordinator: Coordinator {
         let englandAndWalesNavigationController = UINavigationController()
         let englandAndWalesFlag = getFlag(name: "GB-ENG")
         englandAndWalesNavigationController.tabBarItem = UITabBarItem(title: "England and Wales",
-                                                                     image: englandAndWalesFlag,
-                                                                     tag: 0)
+                                                                      image: englandAndWalesFlag,
+                                                                      tag: 0)
 
         let englandAndWalesCoordinator = EnglandAndWalesCoordinator(navigationController: englandAndWalesNavigationController)
 

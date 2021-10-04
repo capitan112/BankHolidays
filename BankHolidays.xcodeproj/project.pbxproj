@@ -132,7 +132,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C914C62927074C5700B1E89F /* Coordinator */ = {
+		C914C62927074C5700B1E89F /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
 				C914C62A27074C6B00B1E89F /* Coordinator.swift */,
@@ -142,7 +142,6 @@
 				C914C63427074E5F00B1E89F /* ScotlandCoordinator.swift */,
 				C914C63627074E9700B1E89F /* NorthernIrelandCoordinator.swift */,
 			);
-			name = Coordinator;
 			path = Coordinators;
 			sourceTree = "<group>";
 		};
@@ -241,7 +240,7 @@
 				C9E541E12706F6FE00888E58 /* Network */,
 				C914C62F27074D7400B1E89F /* Helpers */,
 				C914C62E27074D1D00B1E89F /* Models */,
-				C914C62927074C5700B1E89F /* Coordinator */,
+				C914C62927074C5700B1E89F /* Coordinators */,
 				C914C62D27074D1000B1E89F /* ViewControllers */,
 				C9E541EB2706F84C00888E58 /* Extensions */,
 				C9E541B12706F67A00888E58 /* AppDelegate.swift */,
